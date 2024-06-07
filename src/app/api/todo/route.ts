@@ -10,6 +10,8 @@ export async function GET(req: NextRequest) {
   }
 }
 
+
+
 //create POST which accept id, text and completed then insert into todo table
 export async function POST(req: NextRequest) {
   const { id, text, completed } = await req.json();
